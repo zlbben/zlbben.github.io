@@ -2,19 +2,20 @@
 	@import "../common/css/_reset.css";
 	html {
 		background-color: #fff;
+		width: 100%;
+		height: 100%;
 	}
 	
 	body {
 		position: relative;
+		width: 100%;
+		height: 100%;
 	}
 	
-	html,
-	body,
 	.container {
 		color: #fff;
 		display: flex;
 		position: fixed;
-		min-width: 980px;
 		width: 100%;
 		height: 100%;
 		justify-content: center;

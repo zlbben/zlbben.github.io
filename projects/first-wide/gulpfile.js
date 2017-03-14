@@ -9,7 +9,7 @@ var imgUploader = require('@ali/gulp-img-uploader')
 
 var autoprefixer = require('autoprefixer')
 
-var appList = ['index','anima']
+var appList = ['index', 'anima']
 var BASE_DPR = 2 // NEED CONFIG IN EACH PROJECT
 var REM_UNIT = 75 // NEED CONFIG IN EACH PROJECT
 var IMG_PATH = 'images/'
@@ -20,15 +20,12 @@ gulp.task('default', ['build'], function() {
 	console.log('done')
 })
 
-
 gulp.task('bundle', function() {
 	return gulp.src(mapFiles(appList, 'js'))
 		.pipe(named())
 		.pipe(webpack(getConfig()))
 		.pipe(gulp.dest('dist/'))
 })
-
-
 
 gulp.task('watch', function() {
 	return gulp.src(mapFiles(appList, 'js'))
@@ -72,7 +69,11 @@ function getConfig(opt) {
 		vue: {
 			postcss: [
 				autoprefixer({
-					browsers: ['> 5%']
+					browserslist: [
+						"> 1%",
+						"ff",
+						"ie"
+					]
 				})
 			]
 		},
