@@ -34,7 +34,7 @@
 	
 	.header_li a {
 		font-family: "Gotham Rounded Book", "HelveticaLight", Helvetica, sans-serif;
-		font-size: 14px;
+		font-size: 18px;
 		text-transform: lowercase;
 		color: #777;
 		text-decoration: none;
