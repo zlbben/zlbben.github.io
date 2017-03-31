@@ -66,6 +66,9 @@
 				<li class="header_li">
 					<a :class="{'header--active':this.item == 'contact'}" href="javascript:" @click="headerCall('contact')">contact</a>
 				</li>
+				<li class="header_li">
+					<a href="http://www.imi-spring.com/travel.html">travel</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -94,8 +97,7 @@
 		created() {
 
 		},
-		mounted() {
-		}
+		mounted() {}
 
 	}
 </script>

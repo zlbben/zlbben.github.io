@@ -670,7 +670,7 @@
 	
 	
 	// module
-	exports.push([module.id, "\n.header {\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n\theight: 100px;\n\twidth: 100%;\n\tbackground: white;\n\tborder-bottom: solid 1px rgba( 0, 0, 0, .1);\n\tbox-shadow: 0 0 6px rgba( 0, 0, 0, .05);\n\tz-index: 999;\n}\n.header_logo__pic {\n\twidth: 124px;\n\tposition: absolute;\n\tleft: 20px;\n}\n.header_nav {\n\tposition: absolute;\n\ttop: 30px;\n\tright: 20px;\n}\n.header_li {\n\tdisplay: inline-block;\n}\n.header_ul {\n\tmargin: 16px 0;\n\tpadding-left: 40px;\n}\n.header_li a {\n\tfont-family: \"Gotham Rounded Book\", \"HelveticaLight\", Helvetica, sans-serif;\n\tfont-size: 18px;\n\ttext-transform: lowercase;\n\tcolor: #777;\n\ttext-decoration: none;\n\tmargin: 0 10px 0 10px;\n\tfont-weight: 100;\n}\n.header_li .header--active {\n\tcolor: #7bbab1;\n}\n", "", {"version":3,"sources":["/./components/header.vue?09e793ca"],"names":[],"mappings":";AACA;CACA,gBAAA;CACA,SAAA;CACA,UAAA;CACA,cAAA;CACA,YAAA;CACA,kBAAA;CACA,4CAAA;CACA,wCAAA;CACA,aAAA;CACA;AAEA;CACA,aAAA;CACA,mBAAA;CACA,WAAA;CACA;AAEA;CACA,mBAAA;CACA,UAAA;CACA,YAAA;CACA;AAEA;CACA,sBAAA;CACA;AAEA;CACA,eAAA;CACA,mBAAA;CACA;AAEA;CACA,4EAAA;CACA,gBAAA;CACA,0BAAA;CACA,YAAA;CACA,sBAAA;CACA,sBAAA;CACA,iBAAA;CACA;AAEA;CACA,eAAA;CACA","file":"header.vue","sourcesContent":["<style>\n\t.header {\n\t\tposition: fixed;\n\t\ttop: 0px;\n\t\tleft: 0px;\n\t\theight: 100px;\n\t\twidth: 100%;\n\t\tbackground: white;\n\t\tborder-bottom: solid 1px rgba( 0, 0, 0, .1);\n\t\tbox-shadow: 0 0 6px rgba( 0, 0, 0, .05);\n\t\tz-index: 999;\n\t}\n\t\n\t.header_logo__pic {\n\t\twidth: 124px;\n\t\tposition: absolute;\n\t\tleft: 20px;\n\t}\n\t\n\t.header_nav {\n\t\tposition: absolute;\n\t\ttop: 30px;\n\t\tright: 20px;\n\t}\n\t\n\t.header_li {\n\t\tdisplay: inline-block;\n\t}\n\t\n\t.header_ul {\n\t\tmargin: 16px 0;\n\t\tpadding-left: 40px;\n\t}\n\t\n\t.header_li a {\n\t\tfont-family: \"Gotham Rounded Book\", \"HelveticaLight\", Helvetica, sans-serif;\n\t\tfont-size: 18px;\n\t\ttext-transform: lowercase;\n\t\tcolor: #777;\n\t\ttext-decoration: none;\n\t\tmargin: 0 10px 0 10px;\n\t\tfont-weight: 100;\n\t}\n\t\n\t.header_li .header--active {\n\t\tcolor: #7bbab1;\n\t}\n</style>\n<template>\n\t<div class=\"header\">\n\t\t<a class=\"header_logo\" href=\"javasript:\">\n\t\t\t<img src=\"../images/logo.jpg\" alt=\"\" class=\"header_logo__pic\" />\n\t\t</a>\n\n\t\t<div class=\"header_nav\">\n\t\t\t<ul class=\"header_ul\">\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'about'}\" href=\"javascript:\" @click=\"headerCall('about')\">about</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'wecase'}\" href=\"javascript:\" @click=\"headerCall('wecase')\">case</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'clients'}\" href=\"javascript:\" @click=\"headerCall('clients')\">clients</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'contact'}\" href=\"javascript:\" @click=\"headerCall('contact')\">contact</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n\tmodule.exports = {\n\t\tcomponents: {},\n\t\tdata() {\n\t\t\treturn {\n\t\t\t\titem: 'about'\n\t\t\t}\n\t\t},\n\t\twatch: {\n\n\t\t},\n\t\tcomputed: {\n\n\t\t},\n\t\tmethods: {\n\t\t\theaderCall(data) {\n\t\t\t\tthis.item = data\n\t\t\t\tEVENT_HUB.$emit('headerClick', data)\n\t\t\t}\n\t\t},\n\t\tcreated() {\n\n\t\t},\n\t\tmounted() {\n\t\t}\n\n\t}\n</script>"],"sourceRoot":"webpack://"}]);
+	exports.push([module.id, "\n.header {\n\tposition: fixed;\n\ttop: 0px;\n\tleft: 0px;\n\theight: 100px;\n\twidth: 100%;\n\tbackground: white;\n\tborder-bottom: solid 1px rgba( 0, 0, 0, .1);\n\tbox-shadow: 0 0 6px rgba( 0, 0, 0, .05);\n\tz-index: 999;\n}\n.header_logo__pic {\n\twidth: 124px;\n\tposition: absolute;\n\tleft: 20px;\n}\n.header_nav {\n\tposition: absolute;\n\ttop: 30px;\n\tright: 20px;\n}\n.header_li {\n\tdisplay: inline-block;\n}\n.header_ul {\n\tmargin: 16px 0;\n\tpadding-left: 40px;\n}\n.header_li a {\n\tfont-family: \"Gotham Rounded Book\", \"HelveticaLight\", Helvetica, sans-serif;\n\tfont-size: 18px;\n\ttext-transform: lowercase;\n\tcolor: #777;\n\ttext-decoration: none;\n\tmargin: 0 10px 0 10px;\n\tfont-weight: 100;\n}\n.header_li .header--active {\n\tcolor: #7bbab1;\n}\n", "", {"version":3,"sources":["/./components/header.vue?82993060"],"names":[],"mappings":";AACA;CACA,gBAAA;CACA,SAAA;CACA,UAAA;CACA,cAAA;CACA,YAAA;CACA,kBAAA;CACA,4CAAA;CACA,wCAAA;CACA,aAAA;CACA;AAEA;CACA,aAAA;CACA,mBAAA;CACA,WAAA;CACA;AAEA;CACA,mBAAA;CACA,UAAA;CACA,YAAA;CACA;AAEA;CACA,sBAAA;CACA;AAEA;CACA,eAAA;CACA,mBAAA;CACA;AAEA;CACA,4EAAA;CACA,gBAAA;CACA,0BAAA;CACA,YAAA;CACA,sBAAA;CACA,sBAAA;CACA,iBAAA;CACA;AAEA;CACA,eAAA;CACA","file":"header.vue","sourcesContent":["<style>\n\t.header {\n\t\tposition: fixed;\n\t\ttop: 0px;\n\t\tleft: 0px;\n\t\theight: 100px;\n\t\twidth: 100%;\n\t\tbackground: white;\n\t\tborder-bottom: solid 1px rgba( 0, 0, 0, .1);\n\t\tbox-shadow: 0 0 6px rgba( 0, 0, 0, .05);\n\t\tz-index: 999;\n\t}\n\t\n\t.header_logo__pic {\n\t\twidth: 124px;\n\t\tposition: absolute;\n\t\tleft: 20px;\n\t}\n\t\n\t.header_nav {\n\t\tposition: absolute;\n\t\ttop: 30px;\n\t\tright: 20px;\n\t}\n\t\n\t.header_li {\n\t\tdisplay: inline-block;\n\t}\n\t\n\t.header_ul {\n\t\tmargin: 16px 0;\n\t\tpadding-left: 40px;\n\t}\n\t\n\t.header_li a {\n\t\tfont-family: \"Gotham Rounded Book\", \"HelveticaLight\", Helvetica, sans-serif;\n\t\tfont-size: 18px;\n\t\ttext-transform: lowercase;\n\t\tcolor: #777;\n\t\ttext-decoration: none;\n\t\tmargin: 0 10px 0 10px;\n\t\tfont-weight: 100;\n\t}\n\t\n\t.header_li .header--active {\n\t\tcolor: #7bbab1;\n\t}\n</style>\n<template>\n\t<div class=\"header\">\n\t\t<a class=\"header_logo\" href=\"javasript:\">\n\t\t\t<img src=\"../images/logo.jpg\" alt=\"\" class=\"header_logo__pic\" />\n\t\t</a>\n\n\t\t<div class=\"header_nav\">\n\t\t\t<ul class=\"header_ul\">\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'about'}\" href=\"javascript:\" @click=\"headerCall('about')\">about</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'wecase'}\" href=\"javascript:\" @click=\"headerCall('wecase')\">case</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'clients'}\" href=\"javascript:\" @click=\"headerCall('clients')\">clients</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a :class=\"{'header--active':this.item == 'contact'}\" href=\"javascript:\" @click=\"headerCall('contact')\">contact</a>\n\t\t\t\t</li>\n\t\t\t\t<li class=\"header_li\">\n\t\t\t\t\t<a href=\"http://www.imi-spring.com/travel.html\">travel</a>\n\t\t\t\t</li>\n\t\t\t</ul>\n\t\t</div>\n\t</div>\n</template>\n\n<script>\n\tmodule.exports = {\n\t\tcomponents: {},\n\t\tdata() {\n\t\t\treturn {\n\t\t\t\titem: 'about'\n\t\t\t}\n\t\t},\n\t\twatch: {\n\n\t\t},\n\t\tcomputed: {\n\n\t\t},\n\t\tmethods: {\n\t\t\theaderCall(data) {\n\t\t\t\tthis.item = data\n\t\t\t\tEVENT_HUB.$emit('headerClick', data)\n\t\t\t}\n\t\t},\n\t\tcreated() {\n\n\t\t},\n\t\tmounted() {}\n\n\t}\n</script>"],"sourceRoot":"webpack://"}]);
 	
 	// exports
 
@@ -681,6 +681,9 @@
 
 	'use strict';
 	
+	//
+	//
+	//
 	//
 	//
 	//
@@ -842,7 +845,7 @@
 	        _vm.headerCall('contact')
 	      }
 	    }
-	  }, [_vm._v("contact")])])])])])
+	  }, [_vm._v("contact")])]), _vm._v(" "), _vm._m(1)])])])
 	},staticRenderFns: [function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
 	  return _c('a', {
 	    staticClass: "header_logo",
@@ -856,6 +859,14 @@
 	      "alt": ""
 	    }
 	  })])
+	},function (){var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;
+	  return _c('li', {
+	    staticClass: "header_li"
+	  }, [_c('a', {
+	    attrs: {
+	      "href": "http://www.imi-spring.com/travel.html"
+	    }
+	  }, [_vm._v("travel")])])
 	}]}
 	module.exports.render._withStripped = true
 	if (false) {
