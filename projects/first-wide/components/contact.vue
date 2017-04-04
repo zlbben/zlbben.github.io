@@ -13,7 +13,8 @@
 		width: 246px;
 		height: 70px;
 		right: 20px;
-		top: 150px;
+		top: 50%;
+		margin-top: -123px;
 	}
 	
 	.contact_logo img {
@@ -26,7 +27,8 @@
 		position: absolute;
 		width: 246px;
 		right: 20px;
-		top: 240px;
+		top: 50%;
+		margin-top: -40px;
 		border: 2px solid #fff;
 	}
 	.contact_text span{

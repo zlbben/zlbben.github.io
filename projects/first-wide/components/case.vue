@@ -56,7 +56,7 @@
 	.case_con__des {
 		font-size: 16px;
 		margin-bottom: 30px;
-		color: #aaa;
+		/*color: #aaa;*/
 		margin-bottom: 25px;
 	}
 	
@@ -107,17 +107,17 @@
 		<!--case show-->
 		<div class="case" v-for="val in content">
 			<!--header-->
-			<div class="case_wrap">
+			<!--<div class="case_wrap">
 				<div class="case_header">
 					Case<br />Show
 				</div>
 				<div class="case_header--right">
 					<img src="../images/minilogo.png" />
 				</div>
-			</div>
+			</div>-->
 
 			<!--data-->
-			<div class="case_title"><span :style="{color: val.tit.color,backgroundColor: val.tit.bgcolor}">"{{val.tit.value}}"</span></div>
+			<div class="case_title"><span :style="{color: val.tit.color,backgroundColor: val.tit.bgcolor}">{{val.tit.value}}</span></div>
 			<div class="case_content">
 				<div class="case_content--left">
 					<div class="case_con__tit">{{val.des}}</div>
@@ -155,7 +155,7 @@
 			return {
 				content: [{
 						tit: {
-							value: 'EXPLORE INFINITY BEAUTY',
+							value: '"EXPLORE INFINITY BEAUTY"',
 							color: '#fff',
 							bgcolor: '#d400fa'
 						},
@@ -170,7 +170,7 @@
 						pic: ['../images/pic45.jpeg', '../images/pic46.jpeg', '../images/pic47.jpeg', '../images/pic48.jpeg']
 					}, {
 						tit: {
-							value: 'SET UP THE RIGHT WAY',
+							value: '"SET UP THE RIGHT WAY"',
 							color: '#fff',
 							bgcolor: '#7f7f7f'
 						},
@@ -185,7 +185,7 @@
 						pic: ['../images/pic9.png', '../images/pic10.png', '../images/pic11.png', '../images/pic12.png']
 					}, {
 						tit: {
-							value: '“CONNECTION THAT MATTERS”',
+							value: '"CONNECTION THAT MATTERS"',
 							color: '#fff',
 							bgcolor: '#7f7f1e'
 						},
@@ -201,7 +201,7 @@
 					},
 					{
 						tit: {
-							value: '“Green Power United”',
+							value: '"Green Power United"',
 							color: '#63af57',
 							bgcolor: '#ffff3c'
 						},
@@ -217,7 +217,7 @@
 					},
 //					{
 //						tit: {
-//							value: '“ONE RECEPTION AT TWO CONTINENTS”',
+//							value: '"ONE RECEPTION AT TWO CONTINENTS"',
 //							color: '#811e1d',
 //							bgcolor: '#ffff3c'
 //						},
@@ -231,7 +231,7 @@
 //					},
 					{
 						tit: {
-							value: '“WONDERFUL REUION WITH A LEGACY LEFT”',
+							value: '"WONDERFUL REUION WITH A LEGACY LEFT"',
 							color: '#fff',
 							bgcolor: '#d9795e'
 						},
@@ -247,7 +247,7 @@
 					},
 					{
 						tit: {
-							value: '“ALL OVER THE MAP”',
+							value: '"ALL OVER THE MAP"',
 							color: '#fff',
 							bgcolor: '#487f1e'
 						},
@@ -263,7 +263,7 @@
 					},
 					{
 						tit: {
-							value: '“PARTNERSHIP JOINED”',
+							value: '"PARTNERSHIP JOINED"',
 							color: '#fff',
 							bgcolor: '#7f7f1e'
 						},
@@ -276,7 +276,7 @@
 					},
 					{
 						tit: {
-							value: '“Knowledge Better Experienced”',
+							value: '"Knowledge Better Experienced"',
 							color: '#fff',
 							bgcolor: '#0000fb'
 						},
@@ -292,7 +292,7 @@
 					},
 					{
 						tit: {
-							value: '“A DREAM NIGHT”',
+							value: '"A DREAM NIGHT"',
 							color: '#3965bd',
 							bgcolor: '#d70101'
 						},

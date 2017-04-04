@@ -42,8 +42,17 @@
 		font-size: 60px;
 		margin-bottom: 15px;
 		overflow: hidden;
+		animation: addWidth .8s 2.5s ease both;
 		-webkit-animation: addWidth .8s 2.5s ease both;
 		-moz-animation: addWidth .8s 2.5s ease both;
+	}
+	@keyframes addWidth {
+		0% {
+			width: 0;
+		}
+		100% {
+			width: 980px;
+		}
 	}
 	
 	@-webkit-keyframes addWidth {
@@ -64,7 +73,17 @@
 		}
 	}
 	
-	
+	@keyframes pulse {
+		0% {
+			-webkit-transform: scale(1)
+		}
+		50% {
+			-webkit-transform: scale(1.1)
+		}
+		100% {
+			-webkit-transform: scale(1)
+		}
+	}
 	@-webkit-keyframes pulse {
 		0% {
 			-webkit-transform: scale(1)
@@ -106,10 +125,19 @@
 	}
 	
 	#animation_bottom__line {
+		animation: fadeInUpBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
 		-webkit-animation: fadeInUpBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
 		-moz-animation: fadeInUpBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
 	}
 	
+	@keyframes fadeInUpBig {
+		0% {
+			-webkit-transform: translateY(2000px)
+		}
+		100% {
+			-webkit-transform: translateY(0)
+		}
+	}
 	@-webkit-keyframes fadeInUpBig {
 		0% {
 			-webkit-transform: translateY(2000px)
@@ -129,8 +157,18 @@
 	}
 	
 	#animation_top__line {
+		animation: fadeInDownBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
 		-webkit-animation: fadeInDownBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
 		-moz-animation: fadeInDownBig 1s .2s ease-in-out both, rotateOut 1s 1.2s ease-in-out forwards;
+	}
+	
+	@keyframes fadeInDownBig {
+		0% {
+			-webkit-transform: translateY(-2000px)
+		}
+		100% {
+			-webkit-transform: translateY(0)
+		}
 	}
 	
 	@-webkit-keyframes fadeInDownBig {
@@ -151,6 +189,16 @@
 		}
 	}
 	
+	@keyframes rotateOut {
+		0% {
+			-webkit-transform: rotate(0);
+			opacity: 1
+		}
+		100% {
+			-webkit-transform: rotate(-360deg);
+			opacity: 0
+		}
+	}
 	@-webkit-keyframes rotateOut {
 		0% {
 			-webkit-transform: rotate(0);
@@ -199,10 +247,21 @@
 	}
 	
 	#animation_logo {
+		animation: fadeInUp 1s 2.5s ease both;
 		-webkit-animation: fadeInUp 1s 2.5s ease both;
 		-moz-animation: fadeInUp 1s 2.5s ease both;
 	}
 	
+	@keyframes fadeInUp {
+		0% {
+			opacity: 0;
+			-webkit-transform: translateY(20px)
+		}
+		100% {
+			opacity: 1;
+			-webkit-transform: translateY(0)
+		}
+	}
 	@-webkit-keyframes fadeInUp {
 		0% {
 			opacity: 0;
@@ -224,6 +283,33 @@
 			-moz-transform: translateY(0)
 		}
 	}
+	.logo_arrow_one{
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		background-image: url(../images/arrow.png);
+		bottom: -50px;
+		left: 24px;
+		animation: fadeInUp 1s 2.5s ease both;
+		-webkit-animation: fadeInUp 1s 2.5s ease both;
+		-moz-animation: fadeInUp 1s 2.5s ease both;
+	}
+	.logo_arrow_two{
+		background-size: 100%;
+		background-repeat: no-repeat;
+		position: absolute;
+		background-image: url(../images/arrow.png);
+		bottom: -50px;
+		right: 35px;
+	}
+	.arrow_ani{
+		height: 25px;
+		width: 25px;
+		animation: fadeInUp 2s 3.5s ease both infinite;
+		-webkit-animation: fadeInUp 2s 3.5s ease both infinite;
+		-moz-animation: fadeInUp 2s 3.5s ease both infinite;
+	}
+	
 </style>
 <template>
 
@@ -237,8 +323,10 @@
 
 			<div class="logo" id="animation_logo">
 				<img src="../images/logo_white.png" />
-				<a href="javascript:" class="logo_a logo_a__left"></a>
-				<a href="javascript:" class="logo_a logo_a__right"></a>
+				<a href="http://www.imi-spring.com/travel.html" class="logo_a logo_a__left"></a>
+				<a href="http://www.imi-spring.com/communication.html" class="logo_a logo_a__right"></a>
+				<div class="logo_arrow_one arrow_ani"></div>
+				<div class="logo_arrow_two arrow_ani"></div>
 			</div>
 		</div>
 

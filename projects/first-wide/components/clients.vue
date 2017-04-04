@@ -11,7 +11,7 @@
 		</div>
 		<div class="mod_tit">Our Accounts</div>
 		<div class="mod_des">
-			We have been blessed to be able to maintain these key accounts for us but we never been satisfied with what we have achieved Striking for better performance both for current accounts or any potential clients that seeking for the same.
+			We have been blessed to be able to maintain these key accounts for us but we never been satisfied with what we have achieved. Striking for better performance both for current accounts or any potential clients that seeking for the same.
 		</div>
 		
 		<!--clients show-->
