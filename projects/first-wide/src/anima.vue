@@ -305,9 +305,9 @@
 	.arrow_ani{
 		height: 25px;
 		width: 25px;
-		animation: fadeInUp 2s 3.5s ease both infinite;
-		-webkit-animation: fadeInUp 2s 3.5s ease both infinite;
-		-moz-animation: fadeInUp 2s 3.5s ease both infinite;
+		animation: fadeInUp 2s 5.5s ease both infinite;
+		-webkit-animation: fadeInUp 2s 5.5s ease both infinite;
+		-moz-animation: fadeInUp 2s 5.5s ease both infinite;
 	}
 	
 </style>
