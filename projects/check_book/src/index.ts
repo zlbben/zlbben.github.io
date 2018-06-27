@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 const puppeteer = require('puppeteer');
 const piaotian = require('./selector/piaotian').default
 const books = require('./book_config').default
