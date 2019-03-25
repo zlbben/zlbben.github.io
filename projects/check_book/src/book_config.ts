@@ -12,7 +12,6 @@ let books: { name: string; url: string[] }[] = [
 ];
 
 let biquge: { name: string; url: string[] }[] = [
-  // { name: "永夜君王", url: ["https://www.qu.la/book/635/"] },
   { name: '重燃', url: ['https://www.qu.la/book/38882/'] },
   { name: '深夜书屋', url: ['https://www.qu.la/book/67826/'] },
   { name: '大道朝天', url: ['https://www.qu.la/book/3481/'] },
